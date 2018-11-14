@@ -1,8 +1,19 @@
 <template>
-    <select class="form-control">
-        <option value="0">---</option>
-        <option v-for="item in itemSourceData" :key="item.value" v-bind:value="item.label">{{item.label}}</option>
-    </select>
+    <table class="form-control">
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+            </tr>
+        </thead>
+        <tbody>
+        <tr v-for="item in itemSourceData" :key="item.value">
+            <td>{{item.value}}</td>
+            <td>{{item.label}}</td>
+        </tr>
+        </tbody>
+
+    </table>
 </template>
 <script>
     export default {

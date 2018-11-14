@@ -8,7 +8,6 @@ use App\Core\Common\Pagging;
 use App\Core\Common\SDBStatusCode;
 use App\Core\Dao\SDB;
 use App\Core\Entities\DataResultCollection;
-use App\Core\Entities\DataSearchEntity;
 
 class ProductService implements ProductServiceInterface
 {
